@@ -10,5 +10,13 @@
 <body>	
 	<button class="btn" onclick="calc()">나이 계산하기</button>
 	<div id="result" class="show">(결과 값 표시)</div> 
+
+	<script>
+		var birthYear, age, year = 2021;
+		birthYear = prompt("태어난 연도를 입력하세요",'yyyy');
+		age = year - birthYear + 1;
+		document.querySelector("#result").innerHTML = "나이 : "+age;
+		alert(age+"세 입니다.");
+	</script>
 </body>
 </html>

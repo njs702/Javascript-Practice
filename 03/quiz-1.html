@@ -6,7 +6,12 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>웹 브라우저 창에 표시하기</title>
 </head>
-<body>	
-
+<body>
+	<div id = "showResult">결과</div>	
+	<script>
+		var js = prompt("내용 입력 :");
+		document.write(js);
+		document.querySelector("#showResult").innerHTML = js;
+	</script>
 </body>
 </html>
