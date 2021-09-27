@@ -1,4 +1,12 @@
 		var numbers = [2, 4, 6, 8, 10];
+		var sum = 0;
+		showArray(numbers);
+		for(var i=0;i<numbers.length;i++){
+			sum += numbers[i];
+		}
+
+		numbers.push(sum);
+
 		showArray(numbers);
 
 		function showArray(arr) {
@@ -9,3 +17,4 @@
 			str += "</tr></table>";
 			document.write(str);
 		}
+
